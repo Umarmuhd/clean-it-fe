@@ -7,6 +7,7 @@ import axios from "../../axios";
 export default function Modal({ id }) {
   let history = useHistory();
   const [showModal, setShowModal] = React.useState(false);
+  // eslint-disable-next-line
   const [isError, setIsError] = useState(false);
   const [loader, setLoader] = useState(false);
 

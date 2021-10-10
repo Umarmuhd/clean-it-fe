@@ -16,6 +16,7 @@ function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
+  // eslint-disable-next-line
   function validateForm() {
     return email.length > 0 && password.length > 0;
   }

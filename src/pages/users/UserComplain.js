@@ -8,7 +8,7 @@ import Navbar from "../../components/shared/Navbar";
 
 function UserComplain({ user }) {
   let history = useHistory();
-
+  // eslint-disable-next-line
   const [isError, setIsError] = useState(false);
   const [loader, setLoader] = useState(false);
 

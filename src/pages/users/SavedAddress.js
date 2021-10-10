@@ -10,6 +10,7 @@ import AddressModal from "../../components/shared/AddressModal";
 function SavedAddress({ user }) {
   let history = useHistory();
   const [addresses, setAddresses] = useState([]);
+  // eslint-disable-next-line
   const [currentAddress, setCurrentAddress] = useState({});
   const userId = user.data._id;
 
@@ -26,9 +27,9 @@ function SavedAddress({ user }) {
   const userAddresses = addresses.filter(
     (location) => location.createdBy === userId
   );
-
+  // eslint-disable-next-line
   const editAddress = (data) => {};
-
+  // eslint-disable-next-line
   const deleteAddressHandler = (data) => {
     authMiddleWare(history);
     const authToken = getToken();

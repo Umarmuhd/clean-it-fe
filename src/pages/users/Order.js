@@ -21,7 +21,7 @@ function Order({ user }) {
     axios.get(url).then((response) => {
       setOrders(response.data.data);
     });
-  }, []);
+  }, [history, userId]);
 
   return (
     <>

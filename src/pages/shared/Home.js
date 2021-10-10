@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import MainNavigation from "../../components/shared/MainNavigation";
+// eslint-disable-next-line
 import AnimLoader from "../../components/shared/AnimLoader";
 import hero from "../../assets/svg/hero.svg";
 import Testimonials from "../../components/shared/Testimonials";

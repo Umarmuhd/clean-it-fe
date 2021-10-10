@@ -7,7 +7,9 @@ import axios from "../../axios";
 export default function PricingModal({ id }) {
   let history = useHistory();
   const [showModal, setShowModal] = React.useState(false);
+  // eslint-disable-next-line
   const [isError, setIsError] = useState(false);
+  // eslint-disable-next-line
   const [loader, setLoader] = useState(false);
 
   const [pricing, setPricing] = useState({

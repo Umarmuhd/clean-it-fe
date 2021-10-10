@@ -8,17 +8,20 @@ import Navbar from "../../components/shared/Navbar";
 
 function RequestService({ user }) {
   let history = useHistory();
-
+  // eslint-disable-next-line
   const [isError, setIsError] = useState(false);
+  // eslint-disable-next-line
   const [loader, setLoader] = useState(false);
 
   const [vendors, setVendors] = useState([]);
+  // eslint-disable-next-line
   const [selectedVendor, setSelectedVendor] = useState("");
   const [pricings, setPricings] = useState([]);
-
+  // eslint-disable-next-line
   const userId = user.data._id;
 
   const [pickupDelivery, setPickupDelivery] = useState("");
+  // eslint-disable-next-line
   const [extraDescription, setExtraDescription] = useState("");
 
   useEffect(() => {
@@ -71,8 +74,6 @@ function RequestService({ user }) {
       setPricings({ ...pricing, quantity: 0 });
     });
   };
-
-  console.log(pricings);
 
   const makeOrder = async (event) => {
     event.preventDefault();

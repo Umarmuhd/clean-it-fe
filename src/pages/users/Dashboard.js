@@ -21,7 +21,7 @@ function Dashboard({ user }) {
     axios.get(url).then((response) => {
       setOrders(response.data.data);
     });
-  }, []);
+  }, [history, userId]);
 
   //Recent Orders - Last 5 orders
   const recentOrders = orders.slice(Math.max(orders.length - 5, 0));
